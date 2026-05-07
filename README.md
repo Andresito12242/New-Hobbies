@@ -43,4 +43,4 @@ El diseño se basa en las siguientes clases conceptuales:
 **1. Clonar el repositorio**
 ```text
 git clone [https://github.com/Andresito12242/New-Hobbies.git](https://github.com/Andresito12242/New-Hobbies.git)
-cd New-Hobbies```
+cd New-Hobbies
