@@ -8,7 +8,7 @@ A diferencia de sistemas tradicionales, este modelará relaciones conceptuales e
 ## 👥 Equipo de Desarrollo
 * Andrés Felipe Montoya
 * Maria Ximena Osorno
-* Omaira López Cano
+
 
 ## 🎯 Objetivos
 * **General:** Desarrollar un sistema de recomendación de hobbies basado en tecnologías de la web semántica capaz de inferir actividades personalizadas a partir de la relación entre intereses, habilidades y perfiles de usuario.
