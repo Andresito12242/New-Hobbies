@@ -1,42 +1,46 @@
 # New Hobbies - Sistema de Recomendación Semántico 🎯
 
-[cite_start]El proyecto tratará del desarrollo de un sistema de recomendación de hobbies personalizados que, mediante el uso de tecnologías de la web semántica, permita identificar actividades según los intereses, rasgos y preferencias del usuario[cite: 57, 60]. 
+## 📝 Descripción del Proyecto
+El proyecto consiste en el desarrollo de un sistema de recomendación de hobbies personalizados que, mediante el uso de tecnologías de la web semántica, permita identificar actividades según los intereses, rasgos y preferencias del usuario. 
 
-[cite_start]A diferencia de sistemas tradicionales, nuestro sistema modelará relaciones conceptuales utilizando estructuras semánticas que permitan la inferencia de recomendaciones no evidentes, recomendando hobbies novedosos partiendo de relaciones indirectas entre características del usuario y propiedades de las actividades[cite: 61, 62].
+A diferencia de sistemas tradicionales, este modelará relaciones conceptuales entre habilidades, intereses y tipos de actividades (como senderismo o cerámica), utilizando estructuras semánticas que permitan la inferencia de recomendaciones no evidentes. El sistema será capaz de sugerir hobbies novedosos partiendo de relaciones indirectas entre características del usuario y propiedades de las actividades.
 
 ## 👥 Equipo de Desarrollo
 * Andrés Felipe Montoya
 * Maria Ximena Osorno
+* Omaira López Cano
 
-## 🧩 Componentes del Sistema
-
-El proyecto integra dos pilares fundamentales:
-1. **Agentes Inteligentes**:
-   * [cite_start]**Agente de Perfil de Usuario**: Recolecta y actualiza las preferencias del usuario basadas en sus interacciones a través de la interfaz web[cite: 112].
-   * [cite_start]**Agente de Recomendación**: Utiliza los perfiles y los datos de contenido semántico para generar recomendaciones personalizadas[cite: 113].
-2. **Tecnologías del Web Semántico**:
-   * [cite_start]**Modelo RDF y Ontologías OWL**: Representación de datos estructurados para usuarios, actividades y sus relaciones conceptuales[cite: 115, 116].
-   * [cite_start]**SPARQL**: Lenguaje de consulta utilizado por el agente de recomendación para navegar las tripletas y extraer conocimiento[cite: 117].
+## 🎯 Objetivos
+* **General:** Desarrollar un sistema de recomendación de hobbies basado en tecnologías de la web semántica capaz de inferir actividades personalizadas a partir de la relación entre intereses, habilidades y perfiles de usuario.
+* **Específicos:** * Diseñar una ontología que represente hobbies, habilidades, intereses y características del usuario.
+    * Implementar mecanismos de inferencia que generen recomendaciones a partir de relaciones directas e indirectas.
+    * Desarrollar una interfaz gráfica para la interacción del usuario con el sistema.
 
 ## 🏗️ Ontología (Clases Principales)
-[cite_start]El sistema basa sus inferencias en las siguientes clases[cite: 66, 67]:
-* `Persona`: El usuario del sistema.
-* `Hobbie`: La actividad a recomendar.
-* `Interes`: Preferencias temáticas directas.
-* `Habilidad`: Capacidades físicas o cognitivas.
-* `Nivel`: Grado de exigencia (Ej. principiante, avanzado).
-* `Rasgo`: Características de personalidad (Ej. creatividad, socialización).
+El diseño se basa en las siguientes clases conceptuales:
+* `Persona`: El usuario que interactúa con el sistema.
+* `Hobbie`: La actividad final a recomendar.
+* `Interes`: Gustos temáticos explícitos.
+* `Habilidad`: Capacidades o destrezas requeridas o poseídas.
+* `Nivel`: Grado de exigencia o experiencia (físico, técnico, etc.).
+* `Rasgo`: Características de personalidad (creatividad, socialización, etc.).
 
-## 🚀 Tecnologías Utilizadas
-* [cite_start]**Backend / Web Framework:** Python con Django[cite: 136, 138].
-* **Web Semántica:** RDFLib (Manipulación de grafos en Python).
-* **Frontend:** HTML5, CSS3 (Bootstrap).
+## 🚀 Tecnologías
+* **Backend:** Python y el framework Django.
+* **Web Semántica:** Librería RDFLib para la manipulación de grafos y modelos RDF.
+* **Frontend:** HTML5 y CSS con soporte de Bootstrap.
+
+## 📈 Estado del Proyecto (Avances Actuales)
+- [x] **Fase de Diseño:** Definición de objetivos, descripción y clases de la ontología.
+- [x] **Entorno de Desarrollo:** Configuración de Django, entorno virtual y estructura del proyecto.
+- [x] **Interfaz de Usuario (Agente de Perfil):** Implementación del formulario de captura de preferencias en Django.
+- [x] **Control de Versiones:** Repositorio inicial configurado y sincronizado en GitHub.
+- [ ] **Persistencia Semántica:** Integración de RDFLib para guardar preferencias en formato RDF/Turtle.
+- [ ] **Agente de Recomendación:** Implementación de lógica de inferencia mediante consultas SPARQL.
 
 ## 💻 Instrucciones de Ejecución Local
 
-Sigue estos pasos para levantar el entorno de desarrollo en tu máquina:
-
 **1. Clonar el repositorio**
-```bash
-git clone [https://github.com/TU_USUARIO/New-Hobbies.git](https://github.com/TU_USUARIO/New-Hobbies.git)
-cd New-Hobbies
+```text
+git clone [https://github.com/Andresito12242/New-Hobbies.git](https://github.com/Andresito12242/New-Hobbies.git)
+cd New-Hobbies```
