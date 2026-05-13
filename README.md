@@ -11,7 +11,7 @@ A diferencia de sistemas tradicionales, este modelará relaciones conceptuales e
 
 ## 🎯 Objetivos
 * **General:** Desarrollar un sistema de recomendación de hobbies basado en tecnologías de la web semántica capaz de inferir actividades personalizadas a partir de la relación entre intereses, habilidades y perfiles de usuario.
-* **Específicos:** * Diseñar una ontología que represente hobbies, habilidades, intereses y características del usuario.
+* **Específicos:** 1. Diseñar una ontología que represente hobbies, habilidades, intereses y características del usuario.
     * Implementar mecanismos de inferencia que generen recomendaciones a partir de relaciones directas e indirectas.
     * Desarrollar una interfaz gráfica para la interacción del usuario con el sistema.
 
@@ -44,3 +44,18 @@ El diseño se basa en las siguientes clases conceptuales:
 ```text
 git clone [https://github.com/Andresito12242/New-Hobbies.git](https://github.com/Andresito12242/New-Hobbies.git)
 cd New-Hobbies
+```
+
+**2. Crear y activar el entorno virtual**
+```text
+python -m venv venv
+# Windows: venv\Scripts\activate | Mac/Linux: source venv/bin/activate
+```
+
+**3. Instalar dependencias y ejecutar**
+```text
+pip install django rdflib
+python manage.py runserver
+```
+
+El proyecto estará disponible en: http://127.0.0.1:8000/
