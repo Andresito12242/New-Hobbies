@@ -9,7 +9,6 @@ A diferencia de sistemas tradicionales, este modelará relaciones conceptuales e
 * Andrés Felipe Montoya
 * Maria Ximena Osorno
 
-
 ## 🎯 Objetivos
 * **General:** Desarrollar un sistema de recomendación de hobbies basado en tecnologías de la web semántica capaz de inferir actividades personalizadas a partir de la relación entre intereses, habilidades y perfiles de usuario.
 * **Específicos:** * Diseñar una ontología que represente hobbies, habilidades, intereses y características del usuario.
@@ -33,7 +32,8 @@ El diseño se basa en las siguientes clases conceptuales:
 ## 📈 Estado del Proyecto (Avances Actuales)
 - [x] **Fase de Diseño:** Definición de objetivos, descripción y clases de la ontología.
 - [x] **Entorno de Desarrollo:** Configuración de Django, entorno virtual y estructura del proyecto.
-- [x] **Interfaz de Usuario (Agente de Perfil):** Implementación del formulario de captura de preferencias en Django.
+- [x] **Control de Acceso:** Implementación de sistema de autenticación (Login/Registro) con interfaz limpia y validación flexible.
+- [x] **Interfaz de Usuario (Agente de Perfil):** Implementación del formulario de captura de preferencias en Django, protegido por autenticación.
 - [x] **Control de Versiones:** Repositorio inicial configurado y sincronizado en GitHub.
 - [ ] **Persistencia Semántica:** Integración de RDFLib para guardar preferencias en formato RDF/Turtle.
 - [ ] **Agente de Recomendación:** Implementación de lógica de inferencia mediante consultas SPARQL.
