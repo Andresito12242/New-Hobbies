@@ -11,12 +11,12 @@ A diferencia de sistemas tradicionales, este modelará relaciones conceptuales e
 
 ## 🎯 Objetivos
 * **General:** Desarrollar un sistema de recomendación de hobbies basado en tecnologías de la web semántica capaz de inferir actividades personalizadas a partir de la relación entre intereses, habilidades y perfiles de usuario.
-* **Específicos:** 1. Diseñar una ontología que represente hobbies, habilidades, intereses y características del usuario.
-    * Implementar mecanismos de inferencia que generen recomendaciones a partir de relaciones directas e indirectas.
-    * Desarrollar una interfaz gráfica para la interacción del usuario con el sistema.
+* **Específicos:** * Diseñar una ontología que represente hobbies, habilidades, intereses y características del usuario.
+  * Implementar mecanismos de inferencia que generen recomendaciones a partir de relaciones directas e indirectas.
+  * Desarrollar una interfaz gráfica para la interacción del usuario con el sistema.
 
-## 🏗️ Ontología (Clases Principales)
-El diseño se basa en las siguientes clases conceptuales:
+## 🏗️ Ontología y Diseño Semántico
+El diseño se basa en el namespace principal `http://www.newhobbies.org/ontology/` y consta de las siguientes clases conceptuales:
 * `Persona`: El usuario que interactúa con el sistema.
 * `Hobbie`: La actividad final a recomendar.
 * `Interes`: Gustos temáticos explícitos.
@@ -24,19 +24,26 @@ El diseño se basa en las siguientes clases conceptuales:
 * `Nivel`: Grado de exigencia o experiencia (físico, técnico, etc.).
 * `Rasgo`: Características de personalidad (creatividad, socialización, etc.).
 
-## 🚀 Tecnologías
-* **Backend:** Python y el framework Django.
-* **Web Semántica:** Librería RDFLib para la manipulación de grafos y modelos RDF.
-* **Frontend:** HTML5 y CSS con soporte de Bootstrap.
+**Propiedades de relación (Object Properties):** `tieneInteres`, `poseeHabilidad`, `tieneRasgo`, `requiereInteres`, `requiereHabilidad`.
 
-## 📈 Estado del Proyecto (Avances Actuales)
+## 🧠 Implementación de Agentes Inteligentes
+El núcleo del proyecto se divide en dos agentes integrados con tecnologías de la Web Semántica:
+1. **Agente de Perfil de Usuario:** Captura las preferencias a través de la interfaz web en Django. Utilizando la librería **RDFLib**, transforma estos datos relacionales en tripletas semánticas (Sujeto - Predicado - Objeto) y las almacena dinámicamente en un archivo local (`perfiles_usuarios.ttl`).
+2. **Agente de Recomendación:** Al solicitar una sugerencia, este agente carga el grafo del usuario y el catálogo base de actividades (`hobbies_base.ttl`). Mediante **consultas SPARQL**, infiere y recupera los hobbies cuyos requisitos de habilidades e intereses hacen "match" exacto con el perfil del usuario, devolviendo el resultado a la vista de Django.
+
+## 🚀 Tecnologías
+* **Backend:** Python y framework Django.
+* **Web Semántica:** Librería RDFLib y lenguaje de consultas SPARQL.
+* **Frontend:** HTML5 y CSS3 con soporte de Bootstrap 5.
+
+## 📈 Estado del Proyecto
 - [x] **Fase de Diseño:** Definición de objetivos, descripción y clases de la ontología.
 - [x] **Entorno de Desarrollo:** Configuración de Django, entorno virtual y estructura del proyecto.
-- [x] **Control de Acceso:** Implementación de sistema de autenticación (Login/Registro) con interfaz limpia y validación flexible.
-- [x] **Interfaz de Usuario (Agente de Perfil):** Implementación del formulario de captura de preferencias en Django, protegido por autenticación.
-- [x] **Control de Versiones:** Repositorio inicial configurado y sincronizado en GitHub.
-- [ ] **Persistencia Semántica:** Integración de RDFLib para guardar preferencias en formato RDF/Turtle.
-- [ ] **Agente de Recomendación:** Implementación de lógica de inferencia mediante consultas SPARQL.
+- [x] **Control de Acceso:** Implementación de sistema de autenticación (Login/Registro) con interfaz limpia.
+- [x] **Interfaz de Usuario:** Implementación del formulario de captura de preferencias.
+- [x] **Persistencia Semántica:** Integración de RDFLib para mapear y guardar preferencias en formato RDF/Turtle (`.ttl`).
+- [x] **Agente de Recomendación:** Implementación de lógica de inferencia mediante consultas SPARQL y conexión con la UI.
+- [x] **Control de Versiones:** Repositorio documentado y sincronizado en GitHub.
 
 ## 💻 Instrucciones de Ejecución Local
 

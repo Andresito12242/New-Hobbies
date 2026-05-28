@@ -1,0 +1,14 @@
+@prefix ho: <http://www.newhobbies.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ho:andresml1224 a ho:Persona ;
+    ho:nombre "Andres Montoya"^^xsd:string,
+        "Andrés Felipe Montoya López"^^xsd:string ;
+    ho:poseeHabilidad ho:comunicacion,
+        ho:logica ;
+    ho:tieneInteres ho:naturaleza,
+        ho:social,
+        ho:tecnologia ;
+    ho:tieneNivel ho:intermedio ;
+    ho:tieneRasgo ho:extrovertido .
+

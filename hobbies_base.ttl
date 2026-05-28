@@ -1,0 +1,88 @@
+@prefix ho: <http://www.newhobbies.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==========================================
+# 1. HOBBIES TECNOLÓGICOS Y DIGITALES
+# ==========================================
+
+ho:DesarrolloWeb a ho:Hobbie ;
+    ho:nombreHobbie "Programación y Desarrollo Web"^^xsd:string ;
+    ho:requiereInteres ho:tecnologia ;
+    ho:requiereHabilidad ho:logica ;
+    ho:requiereNivel ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:analitico, ho:introvertido .
+
+ho:DivulgacionTecnologica a ho:Hobbie ;
+    ho:nombreHobbie "Podcaster / Creador de Contenido Tech"^^xsd:string ;
+    ho:requiereInteres ho:tecnologia, ho:naturaleza ;
+    ho:requiereHabilidad ho:comunicacion, ho:logica ;
+    ho:requiereNivel ho:intermedio ;
+    ho:idealParaRasgo ho:extrovertido .
+
+ho:RoboticaEducativa a ho:Hobbie ;
+    ho:nombreHobbie "Robótica y Electrónica DIY"^^xsd:string ;
+    ho:requiereInteres ho:tecnologia, ho:ciencia ;
+    ho:requiereHabilidad ho:logica, ho:manual ;
+    ho:requiereNivel ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:analitico, ho:paciente .
+
+ho:DisenoVideojuegos a ho:Hobbie ;
+    ho:nombreHobbie "Diseño y Modelado de Videojuegos"^^xsd:string ;
+    ho:requiereInteres ho:tecnologia, ho:arte ;
+    ho:requiereHabilidad ho:logica, ho:creatividad ;
+    ho:requiereNivel ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:analitico, ho:creativo .
+
+# ==========================================
+# 2. HOBBIES DE NATURALEZA Y AVENTURA
+# ==========================================
+
+ho:Senderismo a ho:Hobbie ;
+    ho:nombreHobbie "Senderismo y Exploración"^^xsd:string ;
+    ho:requiereInteres ho:naturaleza ;
+    ho:requiereHabilidad ho:fisica ;
+    ho:requiereNivel ho:principiante, ho:intermedio ;
+    ho:idealParaRasgo ho:extrovertido .
+
+ho:CiclismoMontana a ho:Hobbie ;
+    ho:nombreHobbie "Ciclismo de Montaña (MTB)"^^xsd:string ;
+    ho:requiereInteres ho:naturaleza, ho:deporte ;
+    ho:requiereHabilidad ho:fisica ;
+    ho:requiereNivel ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:extrovertido, ho:arriesgado .
+
+ho:FotografiaPaisajes a ho:Hobbie ;
+    ho:nombreHobbie "Fotografía de Paisajes y Naturaleza"^^xsd:string ;
+    ho:requiereInteres ho:naturaleza, ho:arte ;
+    ho:requiereHabilidad ho:creatividad, ho:manual ;
+    ho:requiereNivel ho:principiante, ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:observador, ho:introvertido .
+
+# ==========================================
+# 3. HOBBIES CIENTÍFICOS Y MENTALES
+# ==========================================
+
+ho:AjedrezCompetitivo a ho:Hobbie ;
+    ho:nombreHobbie "Ajedrez y Estrategia"^^xsd:string ;
+    ho:requiereInteres ho:ciencia, ho:juegos ;
+    ho:requiereHabilidad ho:logica ;
+    ho:requiereNivel ho:principiante, ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:analitico, ho:introvertido, ho:paciente .
+
+ho:AstronomiaAficionada a ho:Hobbie ;
+    ho:nombreHobbie "Astronomía Aficionada y Astrofotografía"^^xsd:string ;
+    ho:requiereInteres ho:ciencia, ho:naturaleza ;
+    ho:requiereHabilidad ho:logica, ho:manual ;
+    ho:requiereNivel ho:principiante, ho:intermedio ;
+    ho:idealParaRasgo ho:observador, ho:paciente .
+
+# ==========================================
+# 4. HOBBIES ARTÍSTICOS Y CREATIVOS
+# ==========================================
+
+ho:EscrituraCreativa a ho:Hobbie ;
+    ho:nombreHobbie "Escritura Creativa y Blogueo"^^xsd:string ;
+    ho:requiereInteres ho:arte, ho:literatura ;
+    ho:requiereHabilidad ho:comunicacion, ho:creatividad ;
+    ho:requiereNivel ho:principiante, ho:intermedio, ho:avanzado ;
+    ho:idealParaRasgo ho:introvertido, ho:creativo .
